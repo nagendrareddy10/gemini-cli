@@ -864,6 +864,7 @@ export async function loadCliConfig(
     rawOutput: argv.rawOutput,
     acceptRawOutputRisk: argv.acceptRawOutputRisk,
     modelConfigServiceConfig: settings.modelConfigs,
+    contextFileName: settings.context?.fileName,
     // TODO: loading of hooks based on workspace trust
     enableHooks: settings.hooksConfig.enabled,
     enableHooksUI: settings.hooksConfig.enabled,
